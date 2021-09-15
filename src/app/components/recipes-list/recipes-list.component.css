@@ -1,0 +1,41 @@
+.recipe-container {
+  max-width: 29rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 20px 0px rgba(150, 150, 150, 0.2);
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.recipe-container:hover {
+  animation: hoverZoom 0.1s forwards linear;
+}
+.recipe-image {
+  padding: 5px;
+  border-radius: 1rem;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.recipe-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+.recipe-content {
+  position: relative;
+  padding: 1rem;
+  height: 200px;
+  line-height: 1rem !important;
+}
+.recipe-content em {
+  font-size: 0.9rem;
+}
+.recipe-bottom {
+  position: absolute;
+  bottom: 1rem;
+}
+.recipe-bottom span {
+  font-size: 0.8rem;
+}
