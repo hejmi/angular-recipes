@@ -2,6 +2,13 @@
   <div class="col-md-8">
     <div class="input-group mb-3">
       <div class="input-group-append">
+        <input
+          type="text"
+          placeholder="Search for Recipes"
+          class="input-outline"
+          style="color: #888; margin-right: 10px; padding-left: 10px"
+          name="searchTitle"
+        />
         <button
           class="btn btn-outline-secondary"
           type="button"
@@ -27,12 +34,13 @@
   </div>
   <div class="col-md-6">
     <div *ngIf="currentRecipe.id">
-      <h4>Recipe</h4>
+      <h4>{{ currentRecipe.title }}</h4>
       <div>
         <label><strong>Title:</strong></label> {{ currentRecipe.title }}
       </div>
       <div>
-        <label><strong>Description:</strong></label>
+        <label><strong>Description:</strong></label
+        ><br />
         {{ currentRecipe.description }}
       </div>
       <a class="badge badge-warning" routerLink="/recipes/1"> Edit </a>
