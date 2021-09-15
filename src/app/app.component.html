@@ -1,14 +1,17 @@
-<nav class="navbar navbar-expand navbar-light bg-light">
-  <a class="navbar-brand" [routerLink]="['']">
-    <i class="fa fa-clock-o"></i>
-  </a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['']"> Home </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" [routerLink]="['timeline']"> Timeline </a>
-    </li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">The Recipe Cave</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="recipes" class="nav-link">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add" class="nav-link">Add</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

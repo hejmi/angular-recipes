@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { TimelineComponent } from './timeline/timeline.component';
+import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
+import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-  },
-  {
-    path: 'timeline',
-    component: TimelineComponent,
-  },
-  { path: 'callback' },
+  { path: '', redirectTo: 'recipes', pathMatch: 'full' },
+  { path: 'recipes', component: RecipesListComponent },
+  { path: 'recipes/:id', component: RecipeDetailsComponent },
 ];
 
 @NgModule({
