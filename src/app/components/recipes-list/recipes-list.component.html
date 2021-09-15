@@ -1,12 +1,6 @@
 <div class="list row">
   <div class="col-md-8">
     <div class="input-group mb-3">
-      <input
-        type="text"
-        class="form-control"
-        placeholder="Search by title"
-        [(ngModel)]="title"
-      />
       <div class="input-group-append">
         <button
           class="btn btn-outline-secondary"
@@ -41,12 +35,7 @@
         <label><strong>Description:</strong></label>
         {{ currentRecipe.description }}
       </div>
-      <a
-        class="badge badge-warning"
-        routerLink="/recipes/{{ currentRecipe.id }}"
-      >
-        Edit
-      </a>
+      <a class="badge badge-warning" routerLink="/recipes/1"> Edit </a>
     </div>
 
     <div *ngIf="!currentRecipe">
