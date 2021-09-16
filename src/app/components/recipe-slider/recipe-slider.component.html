@@ -1,5 +1,5 @@
 <div class="carousel-container">
-  <ngb-carousel>
+  <ngb-carousel [interval]="3000">
     <ng-template ngbSlide *ngFor="let recipe of recipes; let i = index">
       <div>
         <img

@@ -1,1 +1,9 @@
-<p>recipe-details works!</p>
+<div class="col-md-6">
+  <div class="recipe-container" *ngIf="currentRecipe.id">
+    <img
+      src="assets/images/recipe/{{ currentRecipe.id }}.jpg"
+      class="recipe-image"
+    />
+    <h3 class="recipe-title">{{ currentRecipe.title }}</h3>
+  </div>
+</div>
