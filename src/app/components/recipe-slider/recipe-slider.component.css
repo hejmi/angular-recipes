@@ -1,12 +1,15 @@
 .carousel-container {
-  width: 750px;
+  max-width: 750px;
+}
+.carousel-image {
+  width: 100%;
 }
 .carousel-caption {
   font-family: "Overpass", sans-serif;
   position: absolute;
-  width: 750px;
+  width: 100%;
   bottom: 20px;
-  left: 0%;
+  left: 0;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -14,6 +17,7 @@
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
 }
+
 .carousel-caption h3 {
   font-size: 1.7rem;
   font-family: "Overpass", sans-serif;

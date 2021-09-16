@@ -1,17 +1,25 @@
 <div>
   <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">The Recipe Cave</a>
+    <a href="#" class="navbar-brand"
+      ><img
+        src="assets/images/cave.png"
+        alt="cave"
+        width="35"
+        style="margin-top: -9px"
+      />
+      Recipe Cave</a
+    >
     <div class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a routerLink="recipes" class="nav-link">Recipes</a>
+        <a routerLink="recipes" class="nav-link">All Recipes</a>
       </li>
       <li class="nav-item">
-        <a routerLink="add" class="nav-link">Add</a>
+        <a routerLink="add" class="nav-link">Add New Recipe</a>
       </li>
     </div>
   </nav>
-
   <div class="mt-4" style="margin-left: calc(50% - 400px)">
     <router-outlet></router-outlet>
   </div>
+  <div class="footer-container">grg</div>
 </div>
