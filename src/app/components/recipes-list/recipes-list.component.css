@@ -16,3 +16,8 @@
   background-color: #343a40;
   border: #343a40;
 }
+
+h4 {
+  font-weight: 800;
+  font-style: italic;
+}

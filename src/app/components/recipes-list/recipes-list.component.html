@@ -33,6 +33,11 @@
   </div>
   <div class="col-md-4">
     <div *ngIf="currentRecipe.id">
+      <img
+        src="assets/images/recipe/{{ currentRecipe.id }}.jpg"
+        width="400"
+        style="padding-bottom: 1rem"
+      />
       <h4>{{ currentRecipe.title }}</h4>
       <div>
         <label><strong>Title:</strong></label> {{ currentRecipe.title }}
@@ -42,12 +47,12 @@
         ><br />
         {{ currentRecipe.description }}
       </div>
-      <a class="badge badge-warning" routerLink="/recipes/1"> Edit </a>
-    </div>
-
-    <div *ngIf="!currentRecipe">
-      <br />
-      <p>Please click on a Recipe...</p>
+      <a
+        class="badge badge-warning"
+        routerLink="/recipes/{{ currentRecipe.id }}"
+      >
+        Show Full Recipe
+      </a>
     </div>
   </div>
 </div>
