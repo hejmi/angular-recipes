@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: "Overpass", sans-serif !important;
 }
+.all-container {
+  margin-bottom: 18rem !important;
+}
 .navbar {
   max-width: 1200px;
   height: 70px;
@@ -28,6 +31,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1199px) {
