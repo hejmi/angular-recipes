@@ -6,6 +6,7 @@
           src="assets/images/recipe/{{ recipe.id }}.jpg"
           alt="Angular Carousel"
           class="carousel-image"
+          [routerLink]="['/recipes/', recipe.id]"
         />
       </div>
       <div class="carousel-caption">

@@ -3,6 +3,7 @@
 }
 .carousel-image {
   width: 100%;
+  cursor: pointer;
 }
 .carousel-caption {
   font-family: "Overpass", sans-serif;
