@@ -10,8 +10,13 @@
       <div class="carousel-caption">
         <h3>{{ recipe.title }}</h3>
         <p>
-          Preparation: {{ recipe.prep_time }} min. Cooking:
-          {{ recipe.cooking_time }} min.
+          <small
+            ><i i-bs name="clock" height="0.8rem" width="0.8rem"></i>
+            Preparation: {{ recipe.prep_time }} min.
+            <i i-bs name="clock" height="0.8rem" width="0.8rem"></i> Cooking:
+            {{ recipe.cooking_time }} min.</small
+          ><br />
+          {{ recipe.description }}
         </p>
       </div>
     </ng-template>

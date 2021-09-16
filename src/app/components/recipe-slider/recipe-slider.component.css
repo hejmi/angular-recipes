@@ -2,6 +2,7 @@
   width: 750px;
 }
 .carousel-caption {
+  font-family: "Overpass", sans-serif;
   position: absolute;
   width: 750px;
   bottom: 20px;
@@ -15,4 +16,7 @@
 }
 .carousel-caption h3 {
   font-size: 1.7rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }

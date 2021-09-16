@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
 import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { RecipeSliderComponent } from './components/recipe-slider/recipe-slider.component';
 
 @NgModule({
@@ -18,8 +19,14 @@ import { RecipeSliderComponent } from './components/recipe-slider/recipe-slider.
     FormsModule,
     CommonModule,
     NgbModule,
+    NgxBootstrapIconsModule.pick(allIcons),
   ],
-  declarations: [AppComponent, RecipesListComponent, RecipeDetailsComponent, RecipeSliderComponent],
+  declarations: [
+    AppComponent,
+    RecipesListComponent,
+    RecipeDetailsComponent,
+    RecipeSliderComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
