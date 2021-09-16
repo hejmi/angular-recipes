@@ -1,9 +1,19 @@
-<div class="col-md-6">
-  <div class="recipe-container" *ngIf="currentRecipe.id">
-    <img
-      src="assets/images/recipe/{{ currentRecipe.id }}.jpg"
-      class="recipe-image"
-    />
-    <h3 class="recipe-title">{{ currentRecipe.title }}</h3>
+<div class="container">
+  <div class="recipe-container" *ngFor="let recipe of recipe; let i = index">
+    <img src="assets/images/recipe/{{ recipe.id }}.jpg" class="recipe-image" />
+    <h3 class="recipe-title">
+      {{ recipe.title }}
+    </h3>
+    <div class="recipe-times">
+      <i i-bs name="clock" height="0.7rem" width="0.7rem"></i> Prep
+      {{ recipe.prep_time }}min.
+      <i i-bs name="clock" height="0.7rem" width="0.7rem"></i> Cooking
+      {{ recipe.cooking_time }} min.
+    </div>
+    <p>
+      {{ recipe.description }}
+    </p>
+    <div class="recipe-times">Ingredients</div>
+    <div class="recipe-times">Steps</div>
   </div>
 </div>

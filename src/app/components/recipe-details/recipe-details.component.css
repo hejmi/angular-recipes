@@ -1,0 +1,21 @@
+.container {
+  max-width: 750px;
+  margin: auto;
+}
+.recipe-image {
+  max-width: 100%;
+}
+.recipe-title {
+  font-style: italic;
+  font-weight: 800;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+.recipe-times {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  width: 240px;
+  padding: 0.7rem;
+  text-align: center;
+  background-color: rgba(171, 171, 171, 0.544);
+}

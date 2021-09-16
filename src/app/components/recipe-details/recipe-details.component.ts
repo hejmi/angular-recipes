@@ -10,6 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class RecipeDetailsComponent implements OnInit {
   currentRecipe: Recipe = {};
+  recipe?: Recipe[];
 
   constructor(
     private recipeService: RecipesService,
@@ -18,18 +19,22 @@ export class RecipeDetailsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getRecipe(this.route.snapshot.params.id);
+    this.getRecipe();
   }
 
-  getRecipe(id: number): void {
-    this.recipeService.get(id).subscribe(
+  getRecipe(): void {
+    this.recipeService.get(this.route.snapshot.params.id).subscribe(
       (data) => {
-        this.currentRecipe = data;
+        this.recipe = data;
         console.log(data);
       },
       (error) => {
         console.log(error);
       }
     );
+  }
+  refreshList(): void {
+    this.getRecipe();
+    this.currentRecipe = {};
   }
 }
