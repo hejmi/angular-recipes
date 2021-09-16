@@ -10,7 +10,7 @@ body {
   font-family: "Overpass", sans-serif !important;
 }
 .all-container {
-  margin-bottom: 18rem !important;
+  padding-bottom: 14rem;
 }
 .navbar {
   max-width: 1200px;
@@ -22,18 +22,30 @@ body {
 }
 .footer-container {
   width: 1200px;
-  height: 15rem;
-  padding: 2rem;
-  background-color: #ededed;
+  height: 12rem;
+  padding: 3rem;
+  background-color: #ededed9a;
   position: fixed;
   bottom: 0;
   margin: 0 calc(50% - 600px);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
+  color: #333;
   z-index: 100;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
-
+.footer-container img {
+  position: absolute;
+  z-index: -1;
+  width: 300px;
+  bottom: -100px;
+  left: 0;
+  filter: grayscale(100%) contrast(10%) brightness(200%)
+    drop-shadow(0px 0px 20px rgb(184, 184, 184));
+  opacity: 0.2;
+}
+.footer-container h5 {
+  font-size: 1.3rem;
+}
 @media screen and (max-width: 1199px) {
   .navbar {
     border-bottom-left-radius: 0;
