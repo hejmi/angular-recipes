@@ -1,4 +1,4 @@
-<div class="list row">
+<div class="row">
   <div class="col-md-8">
     <div class="input-group mb-3">
       <div class="input-group-append">
@@ -20,20 +20,18 @@
     </div>
   </div>
   <div class="col-md-6">
-    <div
-      class="recipe-container"
-      *ngFor="let recipe of recipes; let i = index"
-      [class.active]="i == currentIndex"
-      (click)="setActiveRecipe(recipe, i)"
-    >
-      <img
-        src="assets/images/recipe/{{ recipe.id }}.jpg"
-        class="recipe-image"
-      />
-      <h3 class="recipe-title">{{ recipe.title }}</h3>
-    </div>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let recipe of recipes; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveRecipe(recipe, i)"
+      >
+        <p>{{ recipe.title }}</p>
+      </li>
+    </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <div *ngIf="currentRecipe.id">
       <h4>{{ currentRecipe.title }}</h4>
       <div>
