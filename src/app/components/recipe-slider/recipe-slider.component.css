@@ -1,0 +1,18 @@
+.carousel-container {
+  width: 750px;
+}
+.carousel-caption {
+  position: absolute;
+  width: 750px;
+  bottom: 20px;
+  left: 0%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+.carousel-caption h3 {
+  font-size: 1.7rem;
+}

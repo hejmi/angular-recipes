@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { RecipesListComponent } from './components/recipes-list/recipes-list.component';
 import { RecipeDetailsComponent } from './components/recipe-details/recipe-details.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RecipeSliderComponent } from './components/recipe-slider/recipe-slider.component';
 
 @NgModule({
   imports: [
@@ -15,8 +17,9 @@ import { RecipeDetailsComponent } from './components/recipe-details/recipe-detai
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    NgbModule,
   ],
-  declarations: [AppComponent, RecipesListComponent, RecipeDetailsComponent],
+  declarations: [AppComponent, RecipesListComponent, RecipeDetailsComponent, RecipeSliderComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

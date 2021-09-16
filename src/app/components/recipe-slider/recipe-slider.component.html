@@ -1,0 +1,19 @@
+<div class="carousel-container">
+  <ngb-carousel>
+    <ng-template ngbSlide *ngFor="let recipe of recipes; let i = index">
+      <div>
+        <img
+          src="assets/images/recipe/{{ recipe.id }}.jpg"
+          alt="Angular Carousel 1"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ recipe.title }}</h3>
+        <p>
+          Preparation: {{ recipe.prep_time }} min. Cooking:
+          {{ recipe.cooking_time }} min.
+        </p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
