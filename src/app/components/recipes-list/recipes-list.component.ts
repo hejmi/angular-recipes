@@ -46,7 +46,6 @@ export class RecipesListComponent implements OnInit {
     this.recipeService.findByTitle(this.title).subscribe(
       (data) => {
         this.recipes = data;
-        console.log(data);
       },
       (error) => {
         console.log(error);

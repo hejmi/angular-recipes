@@ -13,7 +13,20 @@
     <p>
       {{ recipe.description }}
     </p>
-    <div class="recipe-times">Ingredients</div>
-    <div class="recipe-times">Steps</div>
+    <div class="recipe-times">List of Ingredients</div>
+    <ul>
+      <li
+        class="ingredients-list"
+        *ngFor="let ingredient of ingredients; let i = index"
+      >
+        {{ ingredient.measure }} {{ ingredient.ingredient }}
+      </li>
+    </ul>
+    <div class="recipe-times">Cooking Steps</div>
+    <div class="steps" *ngFor="let step of steps; let i = index">
+      <p>
+        <strong>{{ step.step }}.</strong> {{ step.description }}
+      </p>
+    </div>
   </div>
 </div>

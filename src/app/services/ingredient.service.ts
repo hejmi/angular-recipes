@@ -11,7 +11,7 @@ const baseUrl = 'http://localhost:3002/api';
 export class IngredientService {
   constructor(private http: HttpClient) {}
 
-  get(id: any): Observable<Ingredient> {
-    return this.http.get(`${baseUrl}/getIngredientsFromId/${id}`);
+  get(id: any): Observable<Ingredient[]> {
+    return this.http.get<Ingredient[]>(`${baseUrl}/getIngredientsFromId/${id}`);
   }
 }

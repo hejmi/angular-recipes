@@ -19,7 +19,6 @@ export class RecipeSliderComponent implements OnInit {
     this.recipeService.getAll().subscribe(
       (data) => {
         this.recipes = data;
-        console.log(data);
       },
       (error) => {
         console.log(error);

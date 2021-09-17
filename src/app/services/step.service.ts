@@ -11,7 +11,7 @@ const baseUrl = 'http://localhost:3002/api';
 export class StepService {
   constructor(private http: HttpClient) {}
 
-  get(id: any): Observable<Step> {
-    return this.http.get(`${baseUrl}/getStepsFromId/${id}`);
+  get(id: any): Observable<Step[]> {
+    return this.http.get<Step[]>(`${baseUrl}/getStepsFromId/${id}`);
   }
 }
