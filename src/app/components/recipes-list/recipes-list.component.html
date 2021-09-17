@@ -1,10 +1,11 @@
 <div class="row">
   <div class="col-md-8">
+    <h3 style="padding-top: 1rem; padding-bottom: 2rem">All Recipes</h3>
     <div class="input-group mb-3">
       <div class="input-group-append">
         <input
           type="text"
-          placeholder="Search for Recipes"
+          placeholder="Search for recipe"
           class="input-outline"
           style="color: #888; margin-right: 10px; padding-left: 10px"
           [(ngModel)]="title"
@@ -48,10 +49,12 @@
         {{ currentRecipe.description }}
       </div>
       <a
-        class="badge badge-warning"
+        class="badge badge-success"
         routerLink="/recipes/{{ currentRecipe.id }}"
+        style="margin-top: 1rem; padding: 1rem"
       >
-        Show Full Recipe
+        Show The Full Recipe
+        <i i-bs name="arrow-right" height="0.9rem" width="0.9rem"></i>
       </a>
     </div>
   </div>
