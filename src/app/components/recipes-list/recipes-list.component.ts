@@ -11,7 +11,7 @@ export class RecipesListComponent implements OnInit {
   recipes?: Recipe[];
   currentRecipe: Recipe = {};
   currentIndex = -1;
-  title = '';
+  title?: string;
 
   constructor(private recipeService: RecipesService) {}
 

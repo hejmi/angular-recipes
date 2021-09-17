@@ -20,6 +20,6 @@ export class RecipesService {
   }
 
   findByTitle(title: any): Observable<Recipe[]> {
-    return this.http.get<Recipe[]>(`${baseUrl}/get/?title=${title}`);
+    return this.http.get<Recipe[]>(`${baseUrl}/search?title=${title}`);
   }
 }
